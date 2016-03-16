@@ -6,7 +6,8 @@ namespace HtmlAgilityPack.Extensions.Selectors.Basic
     {
         public IEnumerable<HtmlNode> SelectHtmlNodes(HtmlNode htmlNode, string selector)
         {
-            return htmlNode.DescendantNodes();
+            //return htmlNode.DescendantNodes();
+            return htmlNode.Descendants();
         }
 
         public bool CanSelectHtmlNodes(string selector)
